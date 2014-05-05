@@ -32,6 +32,7 @@
 	position: absolute;
 	left: 50%;
 	top: 5px;
+	filter: alpha(opacity=0);
 	opacity: 0;
 	z-index: 2;
 }
@@ -43,8 +44,10 @@
 	position: absolute;
 	left: 50%;
 	top: 196px;
+	filter: alpha(opacity=100);
 	opacity: 1;
 	z-index: 2;
+	visibility: visible;
 }
 
 #sliderFooter {
@@ -54,12 +57,14 @@
 	width: 600px;
 	height: 20px;
 	padding-top: 3px;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgb(50,50,50); 
+	background-color: rgba(1,0,0,0.5);
 	position: absolute;
 	left: 0px;
 	top: 203px;
+	filter: alpha(opacity=0);
 	opacity: 0;
-	visibility: hidden;
+	visibility: visible;
 	z-index: 2;
 }
 
@@ -69,6 +74,7 @@
 }
 
 #sliderFooter #sliderImageSpan {
+	float: left;
 	font-size: 10pt;
 	margin-left: 10px;
 }
